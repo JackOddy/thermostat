@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="src/thermostat.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title></title>
   </head>
-
   <body>
     <div class="container">
       <div class="display">
         <div class="MinMax">
           <div class="temp" id="max">
-            maximum temperature
+            <script type="text/javascript">
+               document.write(thermostat.MAX_TEMPERATURE  + '°c')
+            </script>
           </div>
           <div class="temp" id="min">
-            minimum temperature
+            <script type="text/javascript">
+               document.write(thermostat.MIN_TEMPERATURE + '°c')
+            </script>
           </div>
         </div>
-        <input type="button" value="PowerSaveMode">
-        <gauge>gauge</gauge>
+        <input type="button" id='powerSavingOn' value="PowerSave On">
+        <input type="button" id='powerSavingOff' value="PowerSave Off">
+        <gauge></gauge>
       </div>
       <ButtonBar>
-        <input class ="gauge_button" type="button" value="up">
-        <input class ="gauge_button" type="button" value="down">
-        <input class ="gauge_button" type="button" value="reset">
+        <input class ="gauge_button" id='up' type="button" value="up">
+        <input class ="gauge_button" id='down' type="button" value="down">
+        <input class ="gauge_button" id='reset' type="button" value="reset">
       </ButtonBar>
     </div>
   </body>

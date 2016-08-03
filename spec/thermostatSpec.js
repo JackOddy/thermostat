@@ -55,10 +55,10 @@ describe('Thermostat', function(){
   });
   describe('colour coding the screen', function() {
     it('changes colour to green if temperature is < 18', function() {
-      thermostat.temperature = 17
+      thermostat.temperature = 17;
       thermostat.changeColour();
       expect(document.body.style.backgroundColor).toEqual('green')
-    })
+    });
     it('changes colour to gold if temperature is < 25', function() {
       thermostat.temperature = 24;
       thermostat.changeColour();
