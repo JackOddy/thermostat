@@ -33,9 +33,19 @@ input.gauge_button:hover {
             transform: translateX(-2px);
             transform: translateY(-2px);
           }
+input.gauge_button:focus {
+            outline: none;
+          }
+input.gauge_button:active {
+            outline: none;
+            transform: translateX(-2px);
+            transform: translateY(-2px);
+            
+          }
 
 .display {
             height: 100%;
+            width: 600px;
             margin: auto;
             display: block;
 }

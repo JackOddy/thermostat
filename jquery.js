@@ -21,7 +21,7 @@
       updateTemperature();
       });
       function updateTemperature (){
-      $('gauge').text(thermostat.temperature + '°c');
+      $('gaugetext').text(thermostat.temperature + '°c');
       thermostat.changeColour();
       }
     })
