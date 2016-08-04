@@ -8,7 +8,7 @@ function displayWeather(city){
   var token = '&appid=cc223b5674cf457bcf4631591f10342b';
   var units = '&units=metric';
   $.get(url + token + units, function(data){
-    $('#current-temperature').text(data.main.temp);
+    $('#current-temperature').text(Math.floor(data.main.temp) + '°c');
   });
 }
 
@@ -39,6 +39,9 @@ $('#current-city').change(function() {
   function updateTemp () {
   $('temperature').text(thermostat.temperature);
   $('body').attr('class', thermostat.energyUsage());
+  $('#slash1').attr('class', thermostat.energyUsage());
+  $('#slash2').attr('class', thermostat.energyUsage());
+  $('select').attr('class', thermostat.energyUsage());
   }
   function updateMaxTemp () {
   $('maxtemp').text(thermostat.maximumTemp);

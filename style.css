@@ -10,11 +10,11 @@ body{
 .black-line{
     height: 100%;
     position: absolute;
-    width: 50px;
+    width: 100px;
     background-color: black;
     top: 0;
     right: 0;
-    margin-right: 50px;
+    margin-right: 80px;
 }
 
 #blood{
@@ -46,9 +46,8 @@ temperature {
 .Low{
 background-color: dodgerblue;
 }
-
 .Medium{
-background-color: rgb(255,220,34);
+background-color: rgb(253,211,5);
 }
 
 .High{
@@ -84,8 +83,7 @@ button:focus{
 }
 select{
   font-family: impact;
-  color: yellow;
-  background-color: black;
+  color: black;
   font-size: 1em;
   border: none;
   }
@@ -110,3 +108,17 @@ select:focus{
     font-size: 2em;
     text-align: center;
   }
+#slash1{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    transform: rotate(-9deg);
+    bottom: 80px;
+}
+#slash2{
+    position: absolute;
+    height: 5px;
+    width: 78%;
+    transform: rotate(9deg);
+    bottom: 400px;
+}
