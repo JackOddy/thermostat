@@ -38,7 +38,7 @@ $('#current-city').change(function() {
   });
   function updateTemp () {
   $('temperature').text(thermostat.temperature);
-  $('temperature').attr('class', thermostat.energyUsage());
+  $('body').attr('class', thermostat.energyUsage());
   }
   function updateMaxTemp () {
   $('maxtemp').text(thermostat.maximumTemp);

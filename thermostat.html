@@ -9,25 +9,37 @@
     <title>thermostat</title>
   </head>
   <body>
-  <div class='gauge'>
-    <temperature>Temperature</temperature>
-    <button id='powerSaving' type="button" name="button">
-      Toggle Power Saving
-    </button>
-    <maxtemp>Max</maxtemp>
-    <mintemp>Min</mintemp>
-    Current Temperature: <span id="current-temperature"></span>
-    <select id="current-city">
-      <option value="london">London</option>
-      <option value="newyork">New York</option>
-      <option value="paris">Paris</option>
-      <option value="tokyo">Tokyo</option>
-</select>
-  </div>
-  <div class='buttonbar'>
-    <button id='up' type="button" name="button">Up</button>
-    <button id='down' type="button" name="button">Down</button>
-    <button id='reset' type="button" name="button">Reset</button>
-  </div>
+    <div class="container">
+      <div class='gauge'>
+        <temperature>Temperature</temperature>
+        <div id='degrees'>degrees</div>
+        <div id='powerSaving'>
+        <button id='powerSaving-button' type="button" name="button">
+          Toggle Power Saving
+        </button>
+        <div id='min-max'>
+        Max Temp:<maxtemp id='temp'>Max</maxtemp><br>
+        Min Temp:<mintemp id='temp'>Min</mintemp>
+      </div>
+      </div>
+        <div id='world-weather'>
+        Temperature in
+        <select id="current-city">
+          <option id='option' value="london">London</option>
+          <option id='option' value="newyork">New York</option>
+          <option id='option' value="paris">Paris</option>
+          <option id='option' value="tokyo">Tokyo</option>
+    </select>
+        <span id="current-temperature"></span>
+      </div>
+    </div>
+      <div class='buttonbar'>
+        <button id='up' type="button" name="button">Up</button>
+        <button id='down' type="button" name="button">Down</button>
+        <button id='reset' type="button" name="button">Reset</button>
+      </div>
+    </div>
+    <div class='black-line'></div>
+    <img id='blood' src='http://pngimg.com/upload/blood_PNG6097.png'>
   </body>
 </html>

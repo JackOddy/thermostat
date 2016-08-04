@@ -1,11 +1,112 @@
+body{
+  background-color: rgb(255,220,34);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  font-family: impact
+}
+
+.black-line{
+    height: 100%;
+    position: absolute;
+    width: 50px;
+    background-color: black;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+}
+
+#blood{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#degrees{
+    position: absolute;
+    right: -20%;
+    top: 0;
+    margin-top: 150px;
+    transform: rotate(90deg);
+    font-size: 5em;
+}
+temperature {
+  font-size: 300px;
+  position: absolute;
+  width: 310px;
+  text-align: right;
+  z-index: -1;
+}
+.container{
+    width: 400px;
+    margin: auto;
+    height: 600px;
+    position: relative;
+}
 .Low{
-background-color: green;
+background-color: dodgerblue;
 }
 
 .Medium{
-background-color: gold;
+background-color: rgb(255,220,34);
 }
 
 .High{
-background-color: crimson;
+background-color: firebrick;
 }
+#powerSaving{
+    position: absolute;
+    left: -350px;
+    top: 100px;
+}
+.buttonbar{
+    position: absolute;
+    bottom: 250px;
+    width: 310px;
+    text-align: center;
+}
+button{
+    border: none;
+    font-family: gang of three, impact;
+    font-size: 2em;
+    background: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+button:hover{
+  text-shadow: 2px 2px red;
+  transform: translate(-2px);
+}
+button:focus{
+  outline: none;
+  text-shadow: none;
+  transform: none;
+}
+select{
+  font-family: impact;
+  color: yellow;
+  background-color: black;
+  font-size: 1em;
+  border: none;
+  }
+  #option{
+    font-family: impact;
+    color: yellow;
+    background-color: black;
+    font-size: 1em;
+  }
+select:focus{
+  outline: none;
+}
+  #world-weather{
+        position: absolute;
+    bottom: 0;
+    font-size: 2em;
+  }
+  #current-temperature{
+    font-size: 5em;
+  }
+  #min-max{
+    font-size: 2em;
+    text-align: center;
+  }
